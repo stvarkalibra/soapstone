@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+      - name: Higijena repoa
+        run: |
+          git ls-files bin .env
+          test -z "$(git ls-files bin .env)"
       - uses: actions/setup-go@v7
         with:
           go-version-file: go.mod

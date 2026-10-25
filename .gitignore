@@ -3,3 +3,6 @@ coverage.out
 
 bin/
 .env
+.idea/
+.vscode/
+*.swp
